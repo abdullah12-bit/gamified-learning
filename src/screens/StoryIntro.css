@@ -1,0 +1,17 @@
+.story { padding-top: 80px; }
+.story__content { display: flex; flex-direction: column; align-items: center; gap: var(--space-lg); min-height: 70vh; justify-content: center; }
+.story__card {
+  padding: var(--space-2xl) var(--space-xl); text-align: center;
+  max-width: 540px; width: 100%; background: var(--color-bg-card);
+  border: var(--border-light); border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+.story__icon { font-size: 3rem; margin-bottom: var(--space-lg); }
+.story__title { font-size: var(--text-3xl); margin-bottom: var(--space-md); }
+.story__text { font-size: var(--text-base); line-height: 1.8; color: var(--color-text-secondary); }
+.story__cta { margin-top: var(--space-md); min-width: 200px; }
+
+@media (max-width: 768px) {
+  .story__card { padding: var(--space-xl) var(--space-lg); }
+  .story__title { font-size: var(--text-2xl); }
+}

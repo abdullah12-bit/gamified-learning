@@ -1,0 +1,3 @@
+.star-rating { display: flex; gap: var(--space-xs); align-items: center; }
+.star-rating__star { color: #D4D4D4; transition: color var(--transition-base); }
+.star-rating__star--filled { color: var(--color-secondary); filter: drop-shadow(0 0 4px rgba(201,150,58,0.3)); }

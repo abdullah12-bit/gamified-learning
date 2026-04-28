@@ -1,0 +1,20 @@
+.feedback-overlay {
+  position: fixed; inset: 0; z-index: var(--z-modal);
+  background: var(--color-bg-overlay); display: flex; align-items: center; justify-content: center;
+  padding: var(--space-md);
+}
+.feedback-card {
+  background: var(--color-bg-card); border-radius: var(--radius-lg);
+  padding: var(--space-xl); text-align: center; max-width: 400px; width: 100%;
+  border: 2px solid transparent; box-shadow: var(--shadow-lg);
+}
+.feedback-card--correct { border-color: var(--color-success); }
+.feedback-card--correct .feedback-icon { color: var(--color-success); }
+.feedback-card--incorrect { border-color: var(--color-danger); }
+.feedback-card--incorrect .feedback-icon { color: var(--color-danger); }
+.feedback-card--hint { border-color: var(--color-warning); }
+.feedback-card--hint .feedback-icon { color: var(--color-warning); }
+.feedback-icon { margin-bottom: var(--space-md); }
+.feedback-title { font-size: var(--text-2xl); margin-bottom: var(--space-sm); }
+.feedback-message { font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-lg); line-height: 1.6; }
+.feedback-btn { width: 100%; }

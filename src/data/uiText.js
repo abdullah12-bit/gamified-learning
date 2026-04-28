@@ -1,0 +1,353 @@
+export const LANGUAGES = {
+  en: {
+    code: 'en',
+    dir: 'ltr',
+    label: 'English',
+    shortLabel: 'EN',
+  },
+  ar: {
+    code: 'ar',
+    dir: 'rtl',
+    label: 'العربية',
+    shortLabel: 'AR',
+  },
+};
+
+export const DEFAULT_LANG = 'en';
+
+export const UI_TEXT = {
+  en: {
+    'app.brand': 'TaqahQuest',
+    'app.defaultTitle': 'TaqahQuest',
+    'app.skipLink': 'Skip to main content',
+    'app.guideLabel': 'Zap the guide assistant',
+    'app.welcomeTitle': 'TaqahQuest - Restore the Innovation Lab',
+    'app.storyTitle': 'Mission Setup - TaqahQuest',
+    'app.mapTitle': 'Innovation Lab Zones - TaqahQuest',
+    'app.lessonTitle': '{title} - TaqahQuest',
+    'app.activityTitle': '{title} Activity - TaqahQuest',
+    'app.reflectionTitle': 'Real-World Check - TaqahQuest',
+    'app.completeTitle': 'Mission Complete! - TaqahQuest',
+
+    'language.toggle': 'Switch language',
+    'language.current': 'Language: {language}',
+
+    'common.continue': 'Continue',
+    'common.tryAgain': 'Try Again',
+    'common.next': 'Next',
+    'common.reset': 'Reset',
+    'common.on': 'ON',
+    'common.off': 'OFF',
+
+    'header.backToMap': 'Back to map',
+    'header.map': 'Map',
+    'header.resetProgress': 'Reset progress',
+    'header.energyPoints': 'Energy points: {value}',
+    'header.starsEarned': 'Stars earned: {value}',
+    'header.streak': 'First-try streak: {value}',
+    'header.zonesCompleted': '{completed} of {total} zones completed',
+    'header.progressText': '{completed}/{total}',
+
+    'welcome.badge': 'Grade 8 Science - Energy / الطاقة',
+    'welcome.titlePrefix': 'Restore Power to the',
+    'welcome.titleAccent': 'UAE Future Energy Lab',
+    'welcome.subtitle': 'The lab has lost power. Build circuits, test materials, and wire systems to bring each zone back online for the showcase!',
+    'welcome.preview.circuits': 'Build Circuits',
+    'welcome.preview.materials': 'Scan Materials',
+    'welcome.preview.systems': 'Test Systems',
+    'welcome.preview.repair': 'Fix & Restore',
+    'welcome.start': 'Start Mission',
+
+    'story.progress': 'Story card {current} of {total}',
+    'story.begin': 'Begin Journey',
+
+    'map.title': 'Innovation Lab Zones',
+    'map.subtitle': 'Complete each zone to restore power to the lab',
+    'map.routeLabel': 'UAE Energy Route',
+    'map.routeStatus': '{completed} of {total} zones restored',
+    'map.routeBrief': 'Travel from Masdar to Barakah. Each stop restores one real-world power system.',
+    'map.currentStreak': 'Current streak',
+    'map.bestStreak': 'Best streak',
+    'map.powerPath': 'Power path',
+    'map.ready': 'Ready',
+    'map.inProgress': 'In Progress',
+    'map.locked': 'Locked',
+    'map.mastered': 'Mastered',
+    'map.completed': 'Complete',
+
+    'lesson.zone': 'Zone {id}: {zone}',
+    'lesson.objectiveLabel': 'Learning objective',
+    'lesson.uaeLinkLabel': 'UAE Link',
+    'lesson.actionLabel': 'Student action',
+    'lesson.startActivity': 'Start Activity',
+
+    'quiz.progress': 'Question {current} of {total}',
+    'quiz.optionLabel': 'Option {letter}: {text}',
+
+    'feedback.correctTitle': 'Correct!',
+    'feedback.hintTitle': 'Here\'s a hint!',
+    'feedback.incorrectTitle': 'Not quite!',
+
+    'reflection.badge': 'Real-World Check',
+    'reflection.answerChoices': 'Reflection answer choices',
+    'reflection.continue': 'Continue to Map',
+    'reflection.correctGuide': 'Brilliant! You connected the science to the real world!',
+    'reflection.wrongGuide': 'Think about what you learned in this zone...',
+
+    'builder.label': 'Circuit Builder',
+    'builder.progress': 'Circuit {current} of {total}',
+    'builder.battery': 'Battery',
+    'builder.bulb': 'Bulb',
+    'builder.bulb2': 'Bulb 2',
+    'builder.switchOn': 'Switch: ON',
+    'builder.switchOff': 'Switch: OFF (tap)',
+    'builder.reset': 'Reset',
+    'builder.test': 'Test Circuit',
+    'builder.dragGuide': 'Drag the wire to the other terminal to connect it!',
+    'builder.connectedGuide': 'Wire connected!',
+    'builder.missGuide': 'Drag all the way to the other terminal to snap it in place.',
+    'builder.completeGuide': 'The circuit is complete! Electricity is flowing!',
+    'builder.nextGuide': 'Great! Try the next circuit!',
+    'builder.completeTitle': 'Circuit Complete!',
+    'builder.completeMessage': 'Electricity is flowing - the bulb lights up!',
+
+    'lab.label': 'Live Circuit Lab',
+    'lab.progress': '{current} of {total}',
+    'lab.battery': 'Battery',
+    'lab.notice': 'What did I notice?',
+    'lab.nextExperiment': 'Next Experiment',
+    'lab.completeZone': 'Complete Zone',
+    'lab.seriesBadge': 'One Path',
+    'lab.parallelBadge': 'Separate Paths',
+    'lab.correctGuide': 'You got it! Real-world thinking!',
+    'lab.wrongGuide': 'Think about what happened when you turned off one bulb in each experiment...',
+
+    'classify.progress': '{placed}/{total} sorted',
+    'classify.dropHint': 'Drop items here',
+    'classify.completeTitle': 'Sorting Complete!',
+    'classify.completeScore': '{correct} of {total} items sorted correctly',
+    'classify.continue': 'Continue to Reflection',
+    'classify.correctGuide': 'That\'s right! Great sorting!',
+    'classify.wrongGuide': 'Hmm, {item} is actually a {category}. Keep going!',
+
+    'repair.fixedProgress': '{fixed} / {total} Fixed',
+    'repair.diagnosisRequired': 'Diagnosis Required',
+    'repair.allSystems': 'All systems operational!',
+    'repair.fault': 'Fault: {description}',
+    'repair.selectTool': 'Select a tool from the toolbox first.',
+    'repair.correct': 'Correct! {explanation}',
+    'repair.wrongTool': 'That tool doesn\'t fix this fault. Check the diagnosis.',
+    'repair.toggleView': 'Toggle View Mode',
+    'repair.realView': 'Real View',
+    'repair.schematicView': 'Schematic View',
+    'repair.workbench': 'Circuit Workbench',
+    'repair.faultArea': 'Fault {number} Area',
+    'repair.toolbox': 'Toolbox',
+    'repair.selectToolLabel': 'Select tool: {label}',
+    'repair.restoredTitle': 'System Restored!',
+    'repair.restoredMessage': 'Excellent engineering! You successfully diagnosed and repaired all faults. The lab is back online.',
+    'repair.completeGuide': 'All faults repaired! The circuit is closed and power is restored.',
+
+    'final.label': 'Final Mission - Control Room',
+    'final.systemsRestored': 'Systems Restored',
+    'final.questionNumber': 'Question {current} of {total}',
+    'final.onlineGuide': 'System online! Keep going!',
+    'final.hintGuide': 'Not quite - think about what you learned!',
+    'final.hint': 'Think back to what you learned about circuits, materials, and wiring setups.',
+    'final.completeGuide': 'YOU DID IT! The entire Innovation Lab is back online!',
+    'final.completeTitle': 'FULL POWER RESTORED!',
+    'final.completeMessage': 'All systems are online. Mission complete!',
+
+    'completion.title': 'Mission Complete!',
+    'completion.certificate': 'UAE Future Energy Engineer',
+    'completion.subtitle': 'You\'ve restored full power to the UAE Future Energy Lab. Outstanding work! Your innovation ensures a sustainable future.',
+    'completion.energy': 'Energy Points',
+    'completion.stars': 'Stars Earned',
+    'completion.zones': 'Zones Restored',
+    'completion.bestStreak': 'Best Streak',
+    'completion.badges': 'Badges Earned',
+    'completion.zoneResults': 'Zone Results',
+    'completion.replay': 'Replay Mission',
+    'completion.returnToMap': 'Return to Map',
+  },
+  ar: {
+    'app.brand': 'TaqahQuest',
+    'app.defaultTitle': 'TaqahQuest',
+    'app.skipLink': 'تخطي إلى المحتوى الرئيسي',
+    'app.guideLabel': 'زاب، مساعد التعلم',
+    'app.welcomeTitle': 'TaqahQuest - مختبر الطاقة المستقبلي',
+    'app.storyTitle': 'إعداد المهمة - TaqahQuest',
+    'app.mapTitle': 'مناطق مختبر الابتكار - TaqahQuest',
+    'app.lessonTitle': '{title} - TaqahQuest',
+    'app.activityTitle': 'نشاط {title} - TaqahQuest',
+    'app.reflectionTitle': 'تطبيق واقعي - TaqahQuest',
+    'app.completeTitle': 'اكتملت المهمة! - TaqahQuest',
+
+    'language.toggle': 'تبديل اللغة',
+    'language.current': 'اللغة: {language}',
+
+    'common.continue': 'متابعة',
+    'common.tryAgain': 'حاول مرة أخرى',
+    'common.next': 'التالي',
+    'common.reset': 'إعادة',
+    'common.on': 'تشغيل',
+    'common.off': 'إيقاف',
+
+    'header.backToMap': 'العودة إلى الخريطة',
+    'header.map': 'الخريطة',
+    'header.resetProgress': 'إعادة التقدم',
+    'header.energyPoints': 'نقاط الطاقة: {value}',
+    'header.starsEarned': 'النجوم المكتسبة: {value}',
+    'header.streak': 'سلسلة الإجابات من أول محاولة: {value}',
+    'header.zonesCompleted': '{completed} من {total} مناطق مكتملة',
+    'header.progressText': '{completed}/{total}',
+
+    'welcome.badge': 'علوم الصف الثامن - الطاقة / Energy',
+    'welcome.titlePrefix': 'أعد الطاقة إلى',
+    'welcome.titleAccent': 'مختبر الطاقة المستقبلي في الإمارات',
+    'welcome.subtitle': 'انقطعت الطاقة عن المختبر. ابن الدوائر، اختبر المواد، ووصل الأنظمة لإعادة كل منطقة إلى العمل قبل العرض.',
+    'welcome.preview.circuits': 'بناء الدوائر',
+    'welcome.preview.materials': 'فحص المواد',
+    'welcome.preview.systems': 'اختبار الأنظمة',
+    'welcome.preview.repair': 'الإصلاح والاستعادة',
+    'welcome.start': 'ابدأ المهمة',
+
+    'story.progress': 'بطاقة القصة {current} من {total}',
+    'story.begin': 'ابدأ الرحلة',
+
+    'map.title': 'مناطق مختبر الابتكار',
+    'map.subtitle': 'أكمل كل منطقة لإعادة الطاقة إلى المختبر',
+    'map.routeLabel': 'مسار الطاقة في الإمارات',
+    'map.routeStatus': 'تمت استعادة {completed} من {total} مناطق',
+    'map.routeBrief': 'انتقل من مصدر إلى براكة. كل محطة تعيد نظام طاقة واقعي إلى العمل.',
+    'map.currentStreak': 'السلسلة الحالية',
+    'map.bestStreak': 'أفضل سلسلة',
+    'map.powerPath': 'مسار الطاقة',
+    'map.ready': 'جاهز',
+    'map.inProgress': 'قيد التنفيذ',
+    'map.locked': 'مغلق',
+    'map.mastered': 'متقن',
+    'map.completed': 'مكتمل',
+
+    'lesson.zone': 'المنطقة {id}: {zone}',
+    'lesson.objectiveLabel': 'هدف التعلم',
+    'lesson.uaeLinkLabel': 'رابط الإمارات',
+    'lesson.actionLabel': 'فعل الطالب',
+    'lesson.startActivity': 'ابدأ النشاط',
+
+    'quiz.progress': 'السؤال {current} من {total}',
+    'quiz.optionLabel': 'الخيار {letter}: {text}',
+
+    'feedback.correctTitle': 'إجابة صحيحة!',
+    'feedback.hintTitle': 'إليك تلميحاً!',
+    'feedback.incorrectTitle': 'ليست تماماً!',
+
+    'reflection.badge': 'تطبيق واقعي',
+    'reflection.answerChoices': 'خيارات إجابة التطبيق الواقعي',
+    'reflection.continue': 'متابعة إلى الخريطة',
+    'reflection.correctGuide': 'رائع! ربطت العلم بالحياة الواقعية!',
+    'reflection.wrongGuide': 'فكر فيما تعلمته في هذه المنطقة...',
+
+    'builder.label': 'باني الدوائر (Circuit Builder)',
+    'builder.progress': 'الدائرة {current} من {total}',
+    'builder.battery': 'بطارية',
+    'builder.bulb': 'مصباح',
+    'builder.bulb2': 'مصباح 2',
+    'builder.switchOn': 'المفتاح: تشغيل',
+    'builder.switchOff': 'المفتاح: إيقاف (اضغط)',
+    'builder.reset': 'إعادة',
+    'builder.test': 'اختبار الدائرة',
+    'builder.dragGuide': 'اسحب السلك إلى الطرف الآخر لتوصيله!',
+    'builder.connectedGuide': 'تم توصيل السلك!',
+    'builder.missGuide': 'اسحب حتى الطرف الآخر حتى يثبت السلك في مكانه.',
+    'builder.completeGuide': 'الدائرة مكتملة! الكهرباء تتدفق الآن!',
+    'builder.nextGuide': 'رائع! جرّب الدائرة التالية!',
+    'builder.completeTitle': 'اكتملت الدائرة!',
+    'builder.completeMessage': 'الكهرباء تتدفق - المصباح يضيء!',
+
+    'lab.label': 'مختبر الدوائر الحية',
+    'lab.progress': '{current} من {total}',
+    'lab.battery': 'بطارية',
+    'lab.notice': 'ماذا لاحظت؟',
+    'lab.nextExperiment': 'التجربة التالية',
+    'lab.completeZone': 'إكمال المنطقة',
+    'lab.seriesBadge': 'مسار واحد',
+    'lab.parallelBadge': 'مسارات منفصلة',
+    'lab.correctGuide': 'أحسنت! هذا تفكير واقعي!',
+    'lab.wrongGuide': 'فكر فيما حدث عندما أطفأت مصباحاً واحداً في كل تجربة...',
+
+    'classify.progress': '{placed}/{total} تم فرزها',
+    'classify.dropHint': 'أسقط العناصر هنا',
+    'classify.completeTitle': 'اكتمل الفرز!',
+    'classify.completeScore': '{correct} من {total} عناصر فُرزت بشكل صحيح',
+    'classify.continue': 'متابعة إلى التطبيق الواقعي',
+    'classify.correctGuide': 'صحيح! فرز ممتاز!',
+    'classify.wrongGuide': 'انتبه، {item} هو في الحقيقة {category}. تابع!',
+
+    'repair.fixedProgress': '{fixed} / {total} تم إصلاحها',
+    'repair.diagnosisRequired': 'التشخيص مطلوب',
+    'repair.allSystems': 'كل الأنظمة تعمل!',
+    'repair.fault': 'العطل: {description}',
+    'repair.selectTool': 'اختر أداة من صندوق الأدوات أولاً.',
+    'repair.correct': 'صحيح! {explanation}',
+    'repair.wrongTool': 'هذه الأداة لا تصلح هذا العطل. راجع التشخيص.',
+    'repair.toggleView': 'تبديل طريقة العرض',
+    'repair.realView': 'عرض واقعي',
+    'repair.schematicView': 'عرض تخطيطي',
+    'repair.workbench': 'منصة عمل الدائرة',
+    'repair.faultArea': 'منطقة العطل {number}',
+    'repair.toolbox': 'صندوق الأدوات',
+    'repair.selectToolLabel': 'اختر الأداة: {label}',
+    'repair.restoredTitle': 'تمت استعادة النظام!',
+    'repair.restoredMessage': 'عمل هندسي ممتاز! شخّصت كل الأعطال وأصلحتها. المختبر عاد للعمل.',
+    'repair.completeGuide': 'تم إصلاح كل الأعطال! الدائرة مغلقة والطاقة عادت.',
+
+    'final.label': 'المهمة النهائية - غرفة التحكم',
+    'final.systemsRestored': 'الأنظمة المستعادة',
+    'final.questionNumber': 'السؤال {current} من {total}',
+    'final.onlineGuide': 'النظام يعمل! تابع!',
+    'final.hintGuide': 'ليست تماماً - فكر فيما تعلمته!',
+    'final.hint': 'تذكر ما تعلمته عن الدوائر والمواد وأنماط التوصيل.',
+    'final.completeGuide': 'نجحت! عاد مختبر الابتكار بالكامل إلى العمل!',
+    'final.completeTitle': 'تمت استعادة الطاقة بالكامل!',
+    'final.completeMessage': 'كل الأنظمة تعمل. المهمة اكتملت!',
+
+    'completion.title': 'اكتملت المهمة!',
+    'completion.certificate': 'مهندس طاقة المستقبل في الإمارات',
+    'completion.subtitle': 'أعدت تشغيل مختبر الطاقة المستقبلي في الإمارات بالكامل. عمل ممتاز يساعد على بناء مستقبل مستدام.',
+    'completion.energy': 'نقاط الطاقة',
+    'completion.stars': 'النجوم المكتسبة',
+    'completion.zones': 'المناطق المستعادة',
+    'completion.bestStreak': 'أفضل سلسلة',
+    'completion.badges': 'الشارات المكتسبة',
+    'completion.zoneResults': 'نتائج المناطق',
+    'completion.replay': 'إعادة المهمة',
+    'completion.returnToMap': 'العودة إلى الخريطة',
+  },
+};
+
+export function interpolate(template, params = {}) {
+  return template.replace(/\{(\w+)\}/g, (_, key) => String(params[key] ?? `{${key}}`));
+}
+
+export function translate(key, lang = DEFAULT_LANG, params = {}) {
+  const table = UI_TEXT[lang] ?? UI_TEXT[DEFAULT_LANG];
+  const fallbackTable = UI_TEXT[DEFAULT_LANG];
+  return interpolate(table[key] ?? fallbackTable[key] ?? key, params);
+}
+
+export function getText(entity, field, lang = DEFAULT_LANG) {
+  if (!entity) return '';
+  const localizedField = lang === 'ar' ? `${field}Ar` : field;
+  return entity[localizedField] ?? entity[field] ?? '';
+}
+
+export function getArray(entity, field, lang = DEFAULT_LANG) {
+  if (!entity) return [];
+  const localizedField = lang === 'ar' ? `${field}Ar` : field;
+  return entity[localizedField] ?? entity[field] ?? [];
+}
+
+export function getLanguageMeta(lang = DEFAULT_LANG) {
+  return LANGUAGES[lang] ?? LANGUAGES[DEFAULT_LANG];
+}
